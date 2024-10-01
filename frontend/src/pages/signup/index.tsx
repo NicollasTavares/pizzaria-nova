@@ -38,7 +38,6 @@ export default function SignUp() {
       toast.error("Preencha os campos obrigatórios");
       return;
     }
-
   }
 
   return (
@@ -56,9 +55,9 @@ export default function SignUp() {
 
       <div className={styles.containerCenter}>
 
-      
+
         <div className={styles.login}>
-          
+
           <form onSubmit={handleSignUp}>
             <div className={styles.gridForm}>
               <div>
@@ -130,7 +129,9 @@ export default function SignUp() {
             <Button type="submit" loading={false}>Cadastrar</Button>
 
             <Link legacyBehavior href="/">
-              <a className={styles.text}>Já possui uma conta? Faça o login</a>
+              <div className={styles.btnCadastrar}>
+                <a className={styles.text}>Já possui uma conta? Faça o login</a>
+              </div>
             </Link>
           </form>
         </div>
